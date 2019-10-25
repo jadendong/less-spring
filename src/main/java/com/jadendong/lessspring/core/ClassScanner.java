@@ -74,7 +74,8 @@ public class ClassScanner {
                 getClassFromFile(packageName + "." + file.getName(), file.getAbsolutePath(), recursive);
             } else {
                 String className = file.getName().substring(0, file.getName().length() - 6);
-                classes.add(Class.forName(className));
+
+                classes.add(Thread.currentThread().getContextClassLoader().loadClass(packageName + "." + className));
             }
         }
         return classes;

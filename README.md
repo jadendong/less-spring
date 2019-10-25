@@ -23,6 +23,6 @@ Spring 框架简易版实现
 <dependency>
    <groupId>com.github.jadendong</groupId>
    <artifactId>less-spring</artifactId>
-   <version>1.0.1</version>
+   <version>1.0.2</version>
 </dependency>
 ```
