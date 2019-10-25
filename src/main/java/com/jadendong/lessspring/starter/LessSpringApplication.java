@@ -24,8 +24,6 @@ public class LessSpringApplication {
             HandlerManager.resolveMappingHandler(classList);
 
             classList.forEach(it -> System.out.println(it.getName()));
-        } catch (LifecycleException | IOException | ClassNotFoundException e) {
-            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }
